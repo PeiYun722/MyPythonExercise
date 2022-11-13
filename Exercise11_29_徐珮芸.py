@@ -6,18 +6,8 @@
 """
 import numpy as np
 #製作題目規定之numpy
-all=np.arange(0,36).reshape(6,6)
+all=np.array([])
 for i in range(6):
-    for j in range(6):
-        all[i][j]=i*10+j
-print(all)
-
-print("四個角落")
-print(all[::5,::5])
-print("-"*20)
-print(all[2:4,3:5])
-print("-"*20)
-print("每一行總和")
-for i in range(len(all)):
-    print("第%d排:"%(i+1),end="")
-    print(np.sum(all[i]))
+    temp=np.arange(10*i,10*i+6)
+    all=np.r_[all,temp]
+all=all.reshape(6,6)

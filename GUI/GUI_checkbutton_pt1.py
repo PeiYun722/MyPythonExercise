@@ -10,8 +10,8 @@ window=tk.Tk()
 def showMsg():
     result=""
     for i in checkvalue:
-        if checkvalue[i].get()==1:
-            result=result+dessert[i]+" "
+        if checkvalue[i].get()==True:
+            result=result+dessert[i]+","
     msg.showinfo("核取結果", result)
 """""""""""""""""
 建立標籤
