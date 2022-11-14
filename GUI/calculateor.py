@@ -19,12 +19,12 @@ label.grid(row=0,column=0,columnspan=4)
 # 算數函式
 def test(e):
     global ans
-    # 如果按下等於
+    # 按下等於
     if e == 'equal':
         ans = eval(ans)   # 使用 eval() 計算
         num.set(ans)    # 設定顯示的文字變數
         ans = 0         # 歸零
-    # 如果按下AC
+    # 按下AC
     elif e == 'empty':
         ans = 0         # 歸零
         num.set(ans)

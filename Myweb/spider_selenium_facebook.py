@@ -5,8 +5,8 @@ selenium應用實作:
 from selenium import  webdriver
 driver_path=r"C:\MyPython\Myweb\chromedriver\chromedriver"
 url=r"https://facebook.com/"
-email=r"w22835247@yahoo.com.tw"
-password="vm6qo4mp6"
+email=r"帳號"
+password="密碼"
 
 driver=webdriver.Chrome(driver_path)
 driver.maximize_window()#瀏覽器視窗最大化
